@@ -1,0 +1,29 @@
+﻿# Environment — NEVER commit credentials
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Case-specific data — never commit real case files
+trcp_chunks.json
+*_chunks.json
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db

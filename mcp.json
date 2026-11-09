@@ -1,0 +1,19 @@
+﻿{
+  "mcpServers": {
+    "elasticsearch": {
+      "command": "uvx",
+      "args": ["mcp-server-elasticsearch@latest"],
+      "env": {
+        "ELASTICSEARCH_URL": "http://localhost:9200",
+        "ELASTICSEARCH_API_KEY": "your-api-key-here"
+      },
+      "disabled": false,
+      "autoApprove": [
+        "list_indices",
+        "get_mappings",
+        "search",
+        "get_shards"
+      ]
+    }
+  }
+}
